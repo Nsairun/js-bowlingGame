@@ -80,7 +80,7 @@ button {
 
 .btn1:hover {
   transform: scale(1.2);
-  color: #ff0000;
+  color: #ff2600fb;
   background-color: #fff;
 }
 
@@ -99,5 +99,4 @@ button {
   to {
     transform: rotate(359deg);
   }
-	
 }
