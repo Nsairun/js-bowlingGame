@@ -11,7 +11,7 @@ btn1.addEventListener('click', function () {
 })
 
 btn.addEventListener('click', function () {
-  btn.style = "animation: none;"
+  btn.style = 'animation: none;'
   rollBall()
 })
 
@@ -20,10 +20,9 @@ function reset () {
 }
 
 function rollBall () {
-  
   for (let i = 0; i < score.length; i++) {
     count++
-    btn.style = "animation: rotation 0.1s;"
+    btn.style = 'animation: rotation 0.1s;'
   }
 
   let standingPins = 10
@@ -32,7 +31,7 @@ function rollBall () {
   const pinsHitSecond = getRandomPin(standingPins)
   const totalHits = pinsHitFirst + pinsHitSecond
   totalScores += totalHits
-  btn.style = "animation: none;"
+  btn.style = 'animation: none;'
   if (count === 10) {
     score[0].innerHTML = `${pinsHitFirst}, ${pinsHitSecond}`
     totalScore[0].innerHTML = totalHits
@@ -61,7 +60,7 @@ function rollBall () {
     score[8].innerHTML = `${pinsHitFirst}, ${pinsHitSecond}`
     totalScore[8].innerHTML = totalScores
   } else if (count === 100) {
-    btn.style = "animation: rotation 0.1s;"
+    btn.style = 'animation: rotation 0.1s;'
     score[9].innerHTML = `${pinsHitFirst}, ${pinsHitSecond}`
     totalScore[9].innerHTML = totalScores
   } else {
