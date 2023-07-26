@@ -5,6 +5,7 @@ const btn = document.querySelector('.btn')
 const btn1 = document.querySelector('.btn1')
 let count = 0
 let totalScores = 0
+
 btn1.addEventListener('click', function () {
   reset()
 })
